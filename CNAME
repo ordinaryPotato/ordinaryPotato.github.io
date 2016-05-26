@@ -1,9 +1,1 @@
-@ 10800 IN A 217.70.184.38
-blog 10800 IN CNAME ordinaryPotato.github.io
-imap 10800 IN CNAME access.mail.gandi.net.
-pop 10800 IN CNAME access.mail.gandi.net.
-smtp 10800 IN CNAME relay.mail.gandi.net.
-webmail 10800 IN CNAME webmail.gandi.net.
-www 10800 IN CNAME webredir.vip.gandi.net.
-@ 10800 IN MX 50 fb.mail.gandi.net.
-@ 10800 IN MX 10 spool.mail.gandi.net.
+hirst.site
