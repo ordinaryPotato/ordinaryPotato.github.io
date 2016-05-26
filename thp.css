@@ -1,1 +1,35 @@
-Coming Soon CSS
+body {
+  background-color: #80B4CD;
+  border: black;
+}
+
+div {
+  width: 400px;
+  height: 100px;
+  border: black;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+
+div h1 {
+  text-align: center;
+  color: #746860;
+  font-family: Sunday, sans-serif;
+}
+
+div h6 {
+  text-align: center;
+  color: #746860;
+  font-family: Sunday, sans-serif;
+}
+
+@font-face {
+  font-family: "Sunday";
+  src: url('sunday-regular.ttf') format('truetype');
+}
