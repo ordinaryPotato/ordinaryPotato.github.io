@@ -5,9 +5,10 @@ body {
 
 div {
   width: device-width;
-  height: 100px;
+  height: device-height;
   border: black;
 
+  padding-top: 100px;
   position: absolute;
   top:0;
   bottom: 0;
