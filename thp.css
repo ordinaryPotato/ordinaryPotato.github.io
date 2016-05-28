@@ -1,33 +1,85 @@
 body {
-  background-color: #80B4CD;
+  margin: 0;
+  padding: 0;
+  background-color: #88CCF1;
   border: black;
 }
 
-div {
-  width: device-width;
-  height: device-height;
-  border: black;
-
-  padding-top: 150px;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  margin: auto;
+header {
+  background: #66A9F6;
+  width: 100%;
+  padding: 40px 0;
 }
 
-div h1 {
+header h1 {
   text-align: center;
-  color: #746860;
   font-family: Sunday, sans-serif;
-  font-size: 70px;
+  color: white;
 }
 
-div h6 {
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: Sunday, sans-serif;
+}
+
+nav ul {
+  background-color: #66A9F6;
+  overflow: hidden;
+  color: white;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  color: #746860;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li:hover {
+  background-color: #264D95;
+}
+
+.handle {
+  width: 100%;
+  background: #66A9F6;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-family: Sunday, sans-serif;
+  color: white;
+  display:none;
+}
+
+.icon {
+  margin-top: -5px;
+  float: right;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+section {
+  line-height: 1.5em;
+  font-size: 0.9em;
+  padding: 40px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+h6 {
+  text-align: center;
+  color: white;
   font-family: Sunday, sans-serif;
   font-size: 30px;
 }
@@ -35,4 +87,23 @@ div h6 {
 @font-face {
   font-family: "Sunday";
   src: url('sunday-regular.ttf') format('truetype');
+}
+
+@media screen and (max-width: 580px) {
+  nav ul {
+    max-height: 0px;
+  }
+  .showing {
+    max-height: 20em;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .handle {
+    display: block;
+  }
 }
