@@ -25,8 +25,8 @@ header .triangle-two {
   width: 0;
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
-	border-bottom: 80px solid #264D95;
-  margin-top: -80px;
+	border-bottom: 90px solid #264D95;
+  margin-top: -90px;
   margin-left: 18px;
 }
 
@@ -45,8 +45,8 @@ header .triangle-four {
   width: 0;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-bottom: 80px solid #264D95;
-  margin-top: -80px;
+  border-bottom: 90px solid #264D95;
+  margin-top: -90px;
   margin-left: 100px;
 }
 
