@@ -9,18 +9,10 @@ header {
   background-color: #66A9F6;
   width: 100%;
   padding: 40px 0;
+  margin-bottom: 0;
 }
 
 header .triangle-one {
-  width: 0;
-	height: 0;
-	border-bottom: 90px solid #264D95;
-	border-right: 80px solid transparent;
-  margin-top: -90px;
-  margin-left: 18px;
-}
-
-header .triangle-two {
   height: 0;
   width: 0;
 	border-left: 40px solid transparent;
@@ -30,7 +22,17 @@ header .triangle-two {
   margin-left: 18px;
 }
 
-header .triangle-three {
+header .triangle-one-shadow {
+  height: 0;
+  width: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 90px solid white;
+  margin-top: -90px;
+  margin-left: 20px;
+}
+
+header .triangle-two {
   height: 0;
   width: 0;
 	border-left: 50px solid transparent;
@@ -40,7 +42,17 @@ header .triangle-three {
   margin-left: 50px;
 }
 
-header .triangle-four {
+header .triangle-two-shadow {
+  height: 0;
+  width: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid white;
+  margin-top: -120px;
+  margin-left: 52px;
+}
+
+header .triangle-three {
   height: 0;
   width: 0;
   border-left: 40px solid transparent;
@@ -50,14 +62,16 @@ header .triangle-four {
   margin-left: 100px;
 }
 
-header .triangle-five {
-  width: 0;
+header .triangle-three-shadow {
   height: 0;
-  border-bottom: 90px solid #264D95;
-  border-left: 80px solid transparent;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 90px solid white;
   margin-top: -90px;
-  margin-left: 100px;
+  margin-left: 102px;
 }
+
 
 header h1 {
   text-align: center;
@@ -94,24 +108,26 @@ nav ul li {
 
 nav ul li:hover {
   background-color: #66A9F6;
+  transition: all 0.8s ease 0s;
 }
 
 .handle {
   width: 100%;
+  height: 40px;
   background: #264D95;
   text-align: left;
   box-sizing: border-box;
   padding: 15px 10px;
   cursor: pointer;
-  font-family: Sunday, sans-serif;
-  color: white;
   display:none;
 }
 
 .icon {
   margin-top: -5px;
-  float: right;
+  margin-left: 50%;
+  margin-right: 50%;
 }
+
 
 .bar1, .bar2, .bar3 {
     width: 30px;
@@ -169,5 +185,6 @@ section p {
     display: block;
     text-shadow: 1px 1px 2px black;
     margin-top: -16px;
+    cursor: pointer;
   }
 }
