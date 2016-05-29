@@ -1,14 +1,62 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #88CCF1;
+  background-color: #264D95;
   border: black;
 }
 
 header {
-  background: #66A9F6;
+  background-color: #66A9F6;
   width: 100%;
   padding: 40px 0;
+}
+
+header .triangle-one {
+  width: 0;
+	height: 0;
+	border-bottom: 90px solid #264D95;
+	border-right: 80px solid transparent;
+  margin-top: -90px;
+  margin-left: 18px;
+}
+
+header .triangle-two {
+  height: 0;
+  width: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 80px solid #264D95;
+  margin-top: -80px;
+  margin-left: 18px;
+}
+
+header .triangle-three {
+  height: 0;
+  width: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid #264D95;
+  margin-top: -120px;
+  margin-left: 50px;
+}
+
+header .triangle-four {
+  height: 0;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid #264D95;
+  margin-top: -80px;
+  margin-left: 100px;
+}
+
+header .triangle-five {
+  width: 0;
+  height: 0;
+  border-bottom: 90px solid #264D95;
+  border-left: 80px solid transparent;
+  margin-top: -90px;
+  margin-left: 100px;
 }
 
 header h1 {
@@ -26,10 +74,10 @@ a {
 }
 
 nav ul {
-  background-color: #66A9F6;
+  background-color: #264D95;
   overflow: hidden;
   color: white;
-  margin: 0;
+  margin-top: -40px;
   padding: 0;
   text-align: center;
   -webkit-transition: max-height 0.4s;
@@ -45,12 +93,12 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: #264D95;
+  background-color: #66A9F6;
 }
 
 .handle {
   width: 100%;
-  background: #66A9F6;
+  background: #264D95;
   text-align: left;
   box-sizing: border-box;
   padding: 15px 10px;
@@ -79,7 +127,6 @@ section {
   padding: 40px;
   width: 75%;
   margin: 0 auto;
-  text-shadow: 2px 2px 3px black;
 }
 
 h6 {
@@ -87,6 +134,16 @@ h6 {
   color: white;
   font-family: Sunday, sans-serif;
   font-size: 30px;
+  text-shadow: 2px 2px 3px black;
+}
+
+section p {
+  text-align: justify;
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-shadow: 1px 1px 0px black;
+  color: white;
 }
 
 @font-face {
@@ -111,5 +168,6 @@ h6 {
   .handle {
     display: block;
     text-shadow: 1px 1px 2px black;
+    margin-top: -16px;
   }
 }
