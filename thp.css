@@ -16,13 +16,12 @@ body{
 }
 
 header{
-  width: 95%;
-  height: 100px;
+  width: 100%;
+  height: 575px;
   margin: 0 auto;
-  border-bottom: 1px solid #76323f;
   text-align: center;
-  line-height: 25px;
-  background-color: #565656;
+  line-height: 45px;
+  background: linear-gradient(#565656, #e9e9e9);
   color: #ffffff;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -32,8 +31,26 @@ header{
   border-bottom-left-radius: 5px;
 }
 
+#scroll-down{
+  width: 100px;
+  margin-top: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Lato', sans-serif;
+  font-size: .35em;
+  color: #565656;
+}
+
+#down-arrow{
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .title{
   font-family: 'Lato', sans-serif;
+  font-size: 3em;
 }
 
 .spaced{
@@ -42,6 +59,7 @@ header{
 
 .easy-read{
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
 }
 
 .centered{
@@ -71,10 +89,7 @@ header{
 
 .main-content h3{
   font-family: 'Lato', sans-serif;
-}
-
-.main-content p{
-  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
 }
 
 .footer-wrap{
@@ -86,7 +101,7 @@ footer{
   width: 95%;
   height: 40px;
   margin: 0 auto;
-  position: fixed;
+  position: relative;
   bottom: 0;
   border-top: 1px solid #76323f;
   text-align: center;
@@ -94,6 +109,7 @@ footer{
   vertical-align: middle;
   background-color: #565656;
   color: #ffffff;
+  font-size: 1em;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
   -moz-border-radius-topleft: 5px;
