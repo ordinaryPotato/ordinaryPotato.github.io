@@ -6,9 +6,9 @@
   <meta  name="description" content="Need an electrical engineering graduate for your company? Look no further, I'm Rob Hirst and I want to be put to work."/>
   <meta name="keywords" content="Electrical, Electronic, Engineer, Hire, HTML, CSS, Javascript, C, C++, Python, Java, Programmer, Developer"  />
   <meta name="author" content="Rob Hirst"  />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
   <title>Home | Rob Hirst</title>
   <link href="thp.css" type="text/css" rel="stylesheet" />
-  <script language="javascript" href="thp.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet" type='text/css'>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -20,13 +20,15 @@
     <div class="centered child">
       <h1 class="title spaced">ROB HIRST</h1>
       <p class="easy-read spaced">AVID LEARNER</p>
-      <div id="scroll-down">
-        <p>SCROLL DOWN</p>
-      </div>
-      <div id="down-arrow">
-        <svg width="50" height="30">
-          <path d="M0 0 L25 30 L50 0" stroke="#565656" stroke-width="3" fill="none"
-        </svg>
+      <div id="scroll-icon">
+        <div id="scroll-down">
+          <p>SCROLL DOWN</p>
+        </div>
+        <div id="down-arrow">
+          <svg width="50" height="30">
+            <path d="M0 0 L25 30 L50 0" stroke="#565656" stroke-width="3" fill="none"
+          </svg>
+        </div>
       </div>
     </div>
   </header>
@@ -36,15 +38,32 @@
     <!-- First Subsection Start-->
     <div class="sub-section">
       <h3>ABOUT ME</h3>
-      <p>I'm a graduate of </p>
+      <p>I'm...  </p>
     </div>
-    <!-- First Subsection End-->
-    <!-- Second Subsection Start-->
+    <!-- First Subsection End -->
+    <!-- Second Subsection Start -->
     <div class="sub-section">
       <h3>EDUCATION</h3>
-      <p>hello</p>
+      <p>I studied at <b>Newcastle University</b> where I took courses such as:</p>
+      <p class="indent-slightly">
+        C Programming, Computer Systems and Microprocessors, Industrial Automation
+        and Robotics, 
+      </p>
+
     </div>
-    <!-- Second Subsection Start-->
+    <!-- Second Subsection End -->
+    <!-- Third Subsection Start -->
+    <div class="sub-section">
+      <h3>WORK</h3>
+      <p>I've worked at...</p>
+    </div>
+    <!-- Third Subsection End -->
+    <!-- Fourth Subsection Start -->
+    <div class="sub-section">
+      <h3>HOBBIES</h3>
+      <p>Outside of work and school...</p>
+    </div>
+    <!-- Fourth Subsection End -->
   </div>
   <!-- Main End -->
   <!-- Footer Start -->
@@ -56,5 +75,15 @@
     </footer>
   </div>
   <!-- Footer End -->
+  <script language="javascript">
+    $(window).bind('scroll', function() {
+      if ($(window).scrollTop() > 10) {
+        $('#scroll-icon').hide();
+      }
+      else {
+        $('#scroll-icon').show();
+      }
+    });
+  </script>
 </body>
 </html>
