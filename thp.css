@@ -24,10 +24,15 @@ header{
   border-bottom-left-radius: 5px;
 }
 
+#scroll-icon{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
 #scroll-down{
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: 'Lato', sans-serif;
   font-size: 1em;
   color: #565656;
@@ -67,7 +72,7 @@ header{
 
 .main-content{
   width: 95%;
-  height: 500px;
+  height: auto;
   margin: 10px auto;
   border-radius: 5px;
 }
@@ -75,7 +80,7 @@ header{
 .sub-section{
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .main-content h3{
@@ -85,8 +90,15 @@ header{
 }
 
 .main-content p{
-  line-height: 20px;
-  margin: 10px 10px 0 10px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 35px;
+  margin: 10px 10px 0 0;
+}
+
+.indent-slightly{
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #565656;
 }
 
 .footer-wrap{
@@ -96,17 +108,17 @@ header{
 
 footer{
   width: 95%;
-  height: 40px;
+  height: 60px;
   margin: 0 auto;
   position: relative;
   bottom: 0;
   border-top: 1px solid #76323f;
   text-align: center;
-  line-height: 40px;
+  line-height: 60px;
   vertical-align: middle;
   background-color: #565656;
   color: #ffffff;
-  font-size: 1em;
+  font-size: 1.6em;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
   -moz-border-radius-topleft: 5px;
@@ -141,5 +153,32 @@ footer a:hover{
 
   #scroll-down{
     margin-top: 1600px
+  }
+}
+
+@media screen and (min-width: 1000px){
+  #scroll-icon{
+    display: none;
+  }
+
+  .main-content h3{
+    font-size: 1.2em;
+  }
+
+  .main-content p{
+    font-size: 0.8em;
+  }
+
+  .main-content li{
+    font-size: 0.8em;
+  }
+
+  footer{
+    height: 40px;
+  }
+
+  footer p{
+    font-size: 0.6em;
+    line-height: 40px;
   }
 }
