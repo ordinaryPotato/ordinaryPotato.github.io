@@ -10,7 +10,7 @@ body{
 
 header{
   width: 100%;
-  height: 1136px;
+  height: 100vh;
   margin: 0 auto;
   text-align: center;
   line-height: 60px;
@@ -26,7 +26,6 @@ header{
 
 #scroll-down{
   width: 200px;
-  margin-top: 780px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Lato', sans-serif;
