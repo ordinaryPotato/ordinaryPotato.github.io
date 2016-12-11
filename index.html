@@ -11,18 +11,27 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
   <!-- Header Start -->
-  <header>
+  <header id="first-page">
     <div class="centered child">
       <h1 class="title spaced">ROB HIRST</h1>
       <p class="easy-read spaced">AVID LEARNER</p>
+      <div id="scroll-down">
+        <p>SCROLL DOWN</p>
+      </div>
+      <div id="down-arrow">
+        <svg width="50" height="30">
+          <path d="M0 0 L25 30 L50 0" stroke="#565656" stroke-width="3" fill="none"
+        </svg>
+      </div>
     </div>
   </header>
   <!-- Header End -->
   <!-- Main Start -->
-  <div class="main-content">
+  <div class="main-content easy-read">
     <!-- First Subsection Start-->
     <div class="sub-section">
       <h3>ABOUT ME</h3>
@@ -40,11 +49,16 @@
   <!-- Footer Start -->
   <div class="footer-wrap">
     <footer>
-      <p class="easy-read"> Written and designed by
+      <p> Written and designed by
         <a rel="author" href="https://www.linkedin.com/in/robhirst">Rob Hirst</a>
       </p>
     </footer>
   </div>
   <!-- Footer End -->
+  <!-- <script>
+    var height = window.innerHeight;
+    document.getElementById("first-page").style.height = height;
+    document.getElementById("down-arrow").style.marginTop = height - 200;
+  </script> -->
 </body>
 </html>
