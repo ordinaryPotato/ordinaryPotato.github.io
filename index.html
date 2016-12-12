@@ -74,18 +74,41 @@
       </div>
     </div>
     <!-- Portfolio Subsection End -->
+    <!-- Languages Subsection Start -->
+    <div class="sub-section">
+      <h3>LANGUAGES</h3>
+      <p>These are the programming languages that I have experience with:</p>
+      <table>
+        <tr>
+          <td>C</td>
+          <td>C++</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Java</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>CSS</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>jQuery</td>
+        </tr>
+      </table>
+    </div>
     <!-- Work Subsection Start -->
     <div class="sub-section">
       <h3>WORK</h3>
       <p>I've worked at...</p>
     </div>
     <!-- Work Subsection End -->
-    <!-- Hobbies Subsection Start -->
+    <!-- Interests Subsection Start -->
     <div class="sub-section">
-      <h3>HOBBIES</h3>
+      <h3>INTERESTS</h3>
       <p>Outside of work and school...</p>
     </div>
-    <!-- Hobbies Subsection End -->
+    <!-- Interests Subsection End -->
     <!-- Contact Subsection Start -->
     <div class="sub-section">
       <h3>CONTACT</h3>
@@ -105,11 +128,11 @@
   <!-- Footer End -->
   <script language="javascript">
     $(window).bind('scroll', function() {
-      if ($(window).scrollTop() > 10) {
-        $('#scroll-icon').hide();
+      if ($(window).scrollTop() > 30) {
+        document.getElementById("scroll-icon").style.opacity = 0;
       }
       else {
-        $('#scroll-icon').show();
+        document.getElementById("scroll-icon").style.opacity = 100;
       }
     });
   </script>
