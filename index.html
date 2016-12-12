@@ -37,7 +37,7 @@
   <div class="main-content easy-read">
     <!-- About Subsection Start-->
     <div class="sub-section">
-      <h3>ABOUT ME</h3>
+      <h3 class="anchor" id="top-of-main">ABOUT ME</h3>
       <p>I'm...  </p>
     </div>
     <!-- About Subsection End -->
@@ -80,23 +80,30 @@
       <p>These are the programming languages that I have experience with:</p>
       <table>
         <tr>
-          <td>C</td>
-          <td>C++</td>
+          <td>- C</td>
+          <td>- C++</td>
         </tr>
         <tr>
-          <td>Python</td>
-          <td>Java</td>
+          <td>- Python</td>
+          <td>- Java</td>
         </tr>
         <tr>
-          <td>HTML</td>
-          <td>CSS</td>
+          <td>- HTML</td>
+          <td>- CSS</td>
         </tr>
         <tr>
-          <td>JavaScript</td>
-          <td>jQuery</td>
+          <td>- JavaScript</td>
+          <td>- jQuery</td>
         </tr>
       </table>
     </div>
+    <!-- Languages Subsection End -->
+    <!-- Books Subsection Start-->
+    <div class="sub-section">
+      <h3>BOOKS</h3>
+      <p>The books I've found tremendously helpful along the way are...</p>
+    </div>
+    <!-- Books Subsection End-->
     <!-- Work Subsection Start -->
     <div class="sub-section">
       <h3>WORK</h3>
@@ -127,13 +134,22 @@
   </div>
   <!-- Footer End -->
   <script language="javascript">
-    $(window).bind('scroll', function() {
-      if ($(window).scrollTop() > 30) {
-        document.getElementById("scroll-icon").style.opacity = 0;
-      }
-      else {
-        document.getElementById("scroll-icon").style.opacity = 100;
-      }
+    $( document ).ready(function() {
+
+      $("#scroll-icon").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#top-of-main").offset().top
+          }, 500);
+        });
+
+        $(window).bind('scroll', function() {
+        if ($(window).scrollTop() > 30) {
+          document.getElementById("scroll-icon").style.opacity = 0;
+        }
+        else {
+          document.getElementById("scroll-icon").style.opacity = 100;
+        }
+      });
     });
   </script>
 </body>
