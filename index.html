@@ -38,20 +38,26 @@
     <!-- About Subsection Start-->
     <div class="sub-section">
       <h3 class="anchor" id="top-of-main">ABOUT ME</h3>
-      <p>I'm...  </p>
+      <p>
+        I was born, raised, and taught in the UK and in July 2016 I immigrated
+        to the USA to be with my wife. In my final year of university I stumbled
+        upon my interest in programming while preparing my final year project.
+      </p>
+      <p>
+        I would like to pursuit a career in programming and development, whether
+        that be web-based or software-based. I look forward to the opportunity
+        to program as part of a team.
+      </p>
+      <p>
+        I have lots to learn, lots of mistakes to make, and lots of programs to
+        make and break and fix and break again, and I'm determined to reach my
+        goal of one day being a developer.
+      </p>
+      <p>
+
+      </p>
     </div>
     <!-- About Subsection End -->
-    <!-- Education Subsection Start -->
-    <div class="sub-section">
-      <h3>EDUCATION</h3>
-      <p>I studied at <b>Newcastle University</b> where I took courses such as:</p>
-      <p class="indent-slightly">
-        C Programming, Computer Systems and Microprocessors, Industrial Automation
-        and Robotics,
-      </p>
-
-    </div>
-    <!-- Education Subsection End -->
     <!-- Portfolio Subsection Start -->
     <div class="sub-section">
       <h3>PORTFOLIO</h3>
@@ -98,16 +104,87 @@
       </table>
     </div>
     <!-- Languages Subsection End -->
-    <!-- Books Subsection Start-->
+    <!-- Education Subsection Start -->
     <div class="sub-section">
-      <h3>BOOKS</h3>
-      <p>The books I've found tremendously helpful along the way are...</p>
+      <h3>EDUCATION</h3>
+      <p>
+        <b>Newcastle University</b> 09/12 - 07/16<br />
+        Electrical and Electronic Engineering, 2:1.
+      </p>
+      <h6 class="year">Third Year</h6>
+      <p class="indent-slightly">
+        Electrical Machines<br />
+        Analogue Systems<br />
+        Design and Test of Digital Systems<br />
+        Industrial Automation and Robotics<br />
+        Real Time and Embedded Systems<br />
+        Integrated Circuit Design<br />
+        Telecommunication Networks<br />
+        Accounting, Finance and Law<br />
+      </p>
+      <h6 class="year">Second Year</h6>
+      <p class="indent-slightly">
+        Computer Systems and Microprocessors<br />
+        Buggy Project and Professional Issues<br />
+        Signals and Communications II<br />
+        Control and Electrical Machines<br />
+        Digital Electronics<br />
+        Semiconductor Devices and Analogue Electronics<br />
+        Electromagnetic Fields and Waves<br />
+      </p>
+      <h6 class="year">First Year</h6>
+      <p class="indent-slightly">
+        Fields, Materials and Devices<br />
+        Electronics I<br />
+        Circuit Theory<br />
+        Signals and Communications I<br />
+        C Programming<br />
+        Communication Skills and Innovation<br />
+        Engineering Mathematics I<br />
+      </p>
+      <h6 class="year">Foundation Year</h6>
+      <p class="indent-slightly">
+        Basic Statistics<br />
+        Foundation Mathematics I<br />
+        Foundation Mathematics II<br />
+        Applications of Chemistry<br />
+        IT and Communications<br />
+        Mechanical Science<br />
+        Applied Mechanics<br />
+        Electrical and Electronic Engineering<br />
+        Materials Science<br />
+        Foundation Physics<br />
+      </p>
+      <p>
+        <b>Shelley College</b> 09/06 - 07/12<br />
+      </p>
+      <h6 class="year">A Levels</h6>
+      <p class="indent-slightly">
+        A2 Physics<br />
+        A2 Chemistry<br />
+        A2 Biology<br />
+        AS P.E.<br />
+      </p>
+      <h6 class="year">GCSEs</h6>
+      <p class="indent-slightly">
+
+      </p>
     </div>
-    <!-- Books Subsection End-->
+    <!-- Education Subsection End -->
     <!-- Work Subsection Start -->
     <div class="sub-section">
       <h3>WORK</h3>
-      <p>I've worked at...</p>
+      <p>
+        <b>Shepley Spring Ltd</b> 07/09 - 07/16 <br />
+        I worked on the production line for a company that manufactures
+        bottled water. My responsiblities included:
+      </p>
+      <p class="indent-slightly">
+        Troubleshooting the packaging machinery. <br />
+        Ensuring the machinery in the 'clean' areas were spotless. <br />
+        Ensuring only the highest quality product be sent out. <br />
+        Maintaining a safe and clean work environment. <br />
+      </p>
     </div>
     <!-- Work Subsection End -->
     <!-- Interests Subsection Start -->
@@ -116,6 +193,12 @@
       <p>Outside of work and school...</p>
     </div>
     <!-- Interests Subsection End -->
+    <!-- Books Subsection Start-->
+    <div class="sub-section">
+      <h3>BOOKS</h3>
+      <p>The books I've found tremendously helpful along the way are...</p>
+    </div>
+    <!-- Books Subsection End-->
     <!-- Contact Subsection Start -->
     <div class="sub-section">
       <h3>CONTACT</h3>
@@ -142,12 +225,15 @@
           }, 500);
         });
 
-        $(window).bind('scroll', function() {
+      $(window).bind('scroll', function() {
+
+        var scrollIcon = document.getElementById("scroll-icon");
+
         if ($(window).scrollTop() > 30) {
-          document.getElementById("scroll-icon").style.opacity = 0;
+          scrollIcon.style.opacity = 0;
         }
         else {
-          document.getElementById("scroll-icon").style.opacity = 100;
+          scrollIcon.style.opacity = 100;
         }
       });
     });
