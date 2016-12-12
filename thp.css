@@ -33,6 +33,10 @@ header{
   transition: opacity 0.3s linear;
 }
 
+#scroll-icon a{
+  text-decoration: none;
+}
+
 #scroll-down{
   font-family: 'Lato', sans-serif;
   font-size: 0.3em;
@@ -44,6 +48,10 @@ header{
   height: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.anchor{
+  padding-top: 30px;
 }
 
 .title{
