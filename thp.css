@@ -75,6 +75,19 @@ header{
 }
 */
 
+#back-to-top-icon{
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 35px;
+  right: 10px;
+
+  border: 1px solid #565656;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px #000;
+  background-color: #f9f9f9;
+}
+
 
 .anchor{
   padding-top: 30px;
