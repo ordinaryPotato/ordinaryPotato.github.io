@@ -147,6 +147,7 @@ header{
 }
 
 .main-content h6{
+  margin-left: 10px;
   font-family: 'Lato', sans-serif;
   font-size: 0.6em;
 }
@@ -159,11 +160,20 @@ header{
 }
 
 .project-box{
-  width: 100%;
+  width: auto;
   height: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
   border: 1px solid #000000;
-  background-color: rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
+}
+
+#random-quote{
+  background: url("http://i.imgur.com/M4kCySy.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100px;
 }
 
 table{
@@ -178,7 +188,7 @@ td{
 }
 
 .year{
-  padding-left: 20px;
+  padding-left: 10px;
   margin: 5px 0 -15px 0;
 }
 
@@ -250,27 +260,7 @@ footer a:hover{
   color: #ffffff;
 }
 
-@media screen and (min-height: 1330px){
-  header{
-    height: 1334px;
-  }
-
-  #scroll-down{
-    margin-top: 800px;
-  }
-}
-
-@media screen and (min-height: 1900px){
-  header{
-    height: 1920px;
-  }
-
-  #scroll-down{
-    margin-top: 1600px
-  }
-}
-
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1000px){
   header{
     line-height: 60px;
   }
@@ -279,20 +269,25 @@ footer a:hover{
     font-size: 6em;
   }
 
-  #scroll-icon{
-    display: none;
+  header p{
+    font-size: 2em;
+    padding-top: 10px;
   }
 
   .main-content h3{
-    font-size: 1.2em;
+    font-size: 4em;
   }
 
   .main-content p{
-    font-size: 0.8em;
+    font-size: 1.2em;
+  }
+
+  .main-content p.indent-slightly{
+    font-size: 1.2em;
   }
 
   .main-content li{
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 
   footer{
