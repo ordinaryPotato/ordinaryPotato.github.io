@@ -109,7 +109,7 @@ header{
 .main-content{
   width: 95%;
   height: auto;
-  margin: 10px auto;
+  margin: 0 auto;
   border-radius: 5px;
   background: #e9e9e9;
   z-index: 1;
@@ -179,21 +179,27 @@ td{
   text-align: left;
 }
 
-.background-profile{
-  width: 100%;
+#phone, #email{
+  color: #000000;
+}
+
+.img-circular{
+  width: 280px;
   height: 280px;
   position: fixed;
-  margin-bottom: 30px;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
-  margin-top: -30px;
+  margin: -30px auto 30px auto;
 
   background: url("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhGAAAAJDZiMGM1ZjUyLTIxYjQtNGVmMy05YWEyLTk5MTJlZmM4NDY2NQ.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 
-  border-radius: 50%;
+  border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
 }
 
 footer{
