@@ -176,6 +176,14 @@ header{
   height: 100px;
 }
 
+#local-weather{
+  background: url("http://i.imgur.com/v8SWnX0.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+
 table{
   border-collapse: collapse;
   width: 100%;
