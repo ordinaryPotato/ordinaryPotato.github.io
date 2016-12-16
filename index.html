@@ -74,7 +74,7 @@
         <a href="http://codepen.io/ordinaryPotato/full/oYMVBd/"><div class="project-box" id="random-quote"></div></a>
       </div>
       <div class="portfolio-box">
-        <h6>SIMPLE LOCAL WEATHER VIEWER</h6>
+        <h6>LOCAL WEATHER APP</h6>
         <a href="http://codepen.io/ordinaryPotato/full/RoqGyz/"><div class="project-box" id="local-weather"></div></a>
       </div>
       <div class="portfolio-box">
@@ -204,15 +204,13 @@
         Outside of work and school I like to:
       </p>
       <p class="indent-slightly">
-        spend quality time with my wife first and foremost, <br />
-        keep fit and healthy, <br />
-        keep up to date with tech, <br />
-        read novels, <br />
-        take trips up to Mt Hood to snowboard, <br />
-        play football (or soccer as it's known over here) with friends, <br />
-        and take online courses on various topics of interest so I keep learning.
+        Keep fit and healthy <br />
+        Keep up to date with tech <br />
+        Read novels <br />
+        Take trips up to Mt Hood to snowboard <br />
+        Play football (or soccer as it's known over here) with friends <br />
+        Teach myself web development and how to program <br />
       </p>
-
     </div>
     <!-- Interests Subsection End -->
     <!-- Resourses Subsection Start-->
@@ -272,8 +270,8 @@
   <!-- Footer End -->
   <script language="javascript">
     $( document ).ready(function() {
-
-      $("#scroll-icon").click(function() {
+      //scroll down button functions
+      $("#scroll-icon").click(function(){
         $('html, body').animate({
             scrollTop: $("#top-of-main").offset().top
           }, 500);
@@ -290,6 +288,26 @@
           scrollIcon.style.opacity = 100;
         }
       });
+
+      //back to top button functions
+      $("#back-to-top-icon").click(function(){
+        $('html, body').animate({
+          scrollTop: $("#first-page").offset().top
+        }, 800);
+      });
+
+      $(window).bind('scroll', function() {
+
+        var scrollIcon = document.getElementById("back-to-top-icon");
+
+        if ($(window).scrollTop() > 960) {
+          scrollIcon.style.opacity = 100;
+        }
+        else {
+          scrollIcon.style.opacity = 0;
+        }
+      });
+
     });
   </script>
 </body>
