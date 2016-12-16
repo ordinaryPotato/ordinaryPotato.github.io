@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: #000;
+
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container{
+  text-align: center;
+  padding-top: 20px;
+}
+
+#title{
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+h4{
+  height: 80px;
+  line-height: 80px;
+  vertical-align: middle;
+
+  font-family: 'Lato', sans-serif;
+}
+
+.right-align{
+  text-align: right;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+.left-align{
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+
+#content{
+  height: 150px;
+  background: rgba(255, 255, 255, 0.9);
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  font-family: 'Open Sans', sans-serif;
+}
