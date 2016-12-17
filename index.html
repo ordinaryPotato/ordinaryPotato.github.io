@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
     <title>Hire Me | Rob Hirst</title>
     <link href="thp.css" type="text/css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet" type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -36,6 +35,11 @@
         </div>
     </header>
     <!-- Header End -->
+    <!-- Header on Scroll Down Start -->
+    <div class="" id="header-on-scroll">
+        <p>ROB HIRST</p>
+    </div>
+    <!-- Header on Scroll Down End -->
     <!-- Back To Top Icon Start -->
     <div id="back-to-top-icon">
         <svg width="40" height="40">
@@ -67,27 +71,28 @@
             <h3><i class="fa fa-folder-o fa-fw" aria-hidden="true"></i> PORTFOLIO</h3>
             <p>Some of the projects I have been working on:</p>
             <div class="portfolio-box">
-                <h6>RANDOM QUOTE GENERATOR</h6>
+                <h6><i class="fa fa-comment-o fa-fw" aria-hidden="true"></i> RANDOM QUOTE GENERATOR</h6>
                 <a href="http://codepen.io/ordinaryPotato/full/oYMVBd/">
                     <div class="project-box" id="random-quote"></div>
                 </a>
             </div>
             <div class="portfolio-box">
-                <h6>LOCAL WEATHER APP</h6>
+                <h6><i class="fa fa-sun-o fa-fw" aria-hidden="true"></i>
+ LOCAL WEATHER APP</h6>
                 <a href="http://codepen.io/ordinaryPotato/full/RoqGyz/">
                     <div class="project-box" id="local-weather"></div>
                 </a>
             </div>
             <div class="portfolio-box">
-                <h6>WIKIPEDIA VIEWER</h6>
+                <h6><i class="fa fa-wikipedia-w fa-fw" aria-hidden="true"></i> WIKIPEDIA VIEWER</h6>
                 <div class="project-box"></div>
             </div>
             <div class="portfolio-box">
-                <h6>NAUGHTS AND CROSSES</h6>
+                <h6><i class="fa fa-gamepad fa-fw" aria-hidden="true"></i> NAUGHTS AND CROSSES</h6>
                 <div class="project-box"></div>
             </div>
             <div class="portfolio-box">
-                <h6>TWITCH STREAMER</h6>
+                <h6><i class="fa fa-twitch fa-fw" aria-hidden="true"></i> TWITCH STREAMER</h6>
                 <div class="project-box"></div>
             </div>
         </div>
@@ -192,26 +197,35 @@
             </p>
             <table>
                 <tr>
-                    <td class="left-column"><i class="fa fa-phone fa-fw" aria-hidden="true"></td>
+                    <td class="left-column"><i class="fa fa-phone fa-fw" aria-hidden="true">
+                    </td>
                     <td class="right-column"><a class="contact-link" id="phone" href="tel:+1-503-310-1862">(503) 310-1862</a></td>
                 </tr>
                 <tr>
-                    <td class="left-column"><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
+                    <td class="left-column"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
+                    </td>
                     <td class="right-column"><a class="contact-link" id="email" href="mailto:rob.ashhirst@gmail.com">rob.ashhirst@gmail.com</a></td>
                 </tr>
                 <tr>
-                    <td class="left-column"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <td class="left-column"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
                     </td>
                     <td class="right-column"><a class="contact-link" id="linkedin" href="https://www.linkedin.com/in/robhirst">linkedin.com/in/robhirst</a></td>
                 </tr>
                 <tr>
-                    <td class="left-column"><i class="fa fa-instagram" aria-hidden="true"></i>
+                    <td class="left-column"><i class="fa fa-stack-overflow fa-fw" aria-hidden="true"></i>
+                    </td>
+                    <td class="right-column">
+                        <a class="contact-link" id="stack-overflow" href="http://stackoverflow.com/users/5994310/hirst-rob">hirst.rob</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-column"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i>
                     </td>
                     <td class="right-column"><a class="contact-link" id="instagram" href="https://www.instagram.com/hirst.rob/">hirst.rob</a>
                     </td>
                 </tr>
                 <tr>
-                    <td class="left-column"><i class="fa fa-twitter" aria-hidden="true"></i>
+                    <td class="left-column"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
                     </td>
                     <td class="right-column"><a class="contact-link" id="twitter" href="https://twitter.com/__hirstrob__">@__hirstrob__</a></td>
                 </tr>
@@ -251,6 +265,18 @@
                     scrollIcon.style.opacity = 0;
                 } else {
                     scrollIcon.style.opacity = 100;
+                }
+            });
+
+            //header on scroll functions
+            $(window).bind('scroll', function() {
+
+                var scrollIcon = document.getElementById("header-on-scroll");
+
+                if ($(window).scrollTop() > 600) {
+                    scrollIcon.style.opacity = 100;
+                } else {
+                    scrollIcon.style.opacity = 0;
                 }
             });
 
