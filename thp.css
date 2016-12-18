@@ -87,10 +87,14 @@ header{
     transform: translateX(-50%);
     z-index: 10;
 
+    text-align: right;
     background: #565656;
     opacity: 0;
 
-    text-align: right;
+    transition: opacity 0.2s ease;
+}
+
+#header-on-scroll a{
     letter-spacing: 3px;
     line-height: 30px;
     vertical-align: middle;
@@ -98,8 +102,12 @@ header{
     font-size: 1.2em;
     padding-right: 20px;
     color: #f9f9f9;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-    transition: opacity 0.2s ease;
+#header-on-scroll a:hover{
+    text-decoration: underline;
 }
 
 #back-to-top-icon{
@@ -199,11 +207,17 @@ header{
 
 .project-box{
   width: auto;
-  height: 100px;
+  height: 200px;
   margin-left: 10px;
   margin-right: 10px;
   border: 1px solid #000000;
   margin-bottom: 30px;
+  transition: opacity 0.2s ease;
+}
+
+.project-box:hover{
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
 }
 
 #random-quote{
@@ -211,7 +225,7 @@ header{
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  height: 100px;
+
 }
 
 #local-weather{
@@ -219,7 +233,6 @@ header{
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  height: 100px;
 }
 
 table{
